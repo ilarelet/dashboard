@@ -8,6 +8,7 @@ body{
     grid-template-columns: 300px 1fr;
     grid-template-rows: repeat(2, auto-fit);
     width: 100%;
+    height: 100%;
     margin: 0;
 }
 
@@ -19,12 +20,13 @@ nav{
 }
 
 main{
-    background-color: #999999;
+    background-color: #eaeaea;
     display: grid;
-    grid-template-columns: 2fr minmax(400px 1fr);
+    grid-template-columns: 2fr 300px;
     grid-template-rows: repeat(2, auto-fit);
     gap: 15px;
     padding: 15px;
+    padding-right: 25px;
 }
 
 /*Main Site Content*/
@@ -44,6 +46,7 @@ main{
 h3{
     margin-top: 0;
     margin-bottom: 10px;
+    font-size: 1.25em;
 }
 
 /*Main Site */
@@ -51,23 +54,90 @@ h3{
 .projects-content{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 15px
+    gap: 15px;
 }
 
-.project{
+.project-card{
     background-color: white;
     padding: 10px;
-    height: 150px;
+    height: 200px;
+    border-radius: 5px;
+    border-left:5px solid rgb(222, 150, 0);
+    box-shadow: 2px 2px 2.5px rgba(0, 0, 0, 0.15);
+}
+
+.project-title{
+    font-weight: bold;
+}
+
+.project-text{
+    font-size: 0.9em;
+    margin: 0;
 }
 
 .ann-content{
-    background-color: white;   
+    background-color: white;
+    padding: 5px 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2.5px rgba(0, 0, 0, 0.15);
+}
+
+.ann-title{
+    font-size: 0.9em;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+}
+
+.ann-text{
+    margin: 0px;
+    padding: 0; 
+    font-size: 0.8em;
+}
+
+.ann-card{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: solid 1px rgb(150, 150, 150);
+}
+
+.ann-card:last-child{
+    border-bottom: none;
 }
 
 .trending-content{
     background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    box-shadow: 2px 2px 2.5px rgba(0, 0, 0, 0.15);
 }
 
+.trend-card{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 25px;
+}
+
+.trend-card:last-child{
+    padding-bottom: 0;
+}
+
+.trend-user{
+    display: flex;
+    flex-direction: column;
+}
+
+.trend-user>p{
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+}
+
+.trend-title{
+    font-weight: bold;
+}
 /*navbar*/
 .page-logo-label{
     font-size: 1.5em;
@@ -89,7 +159,15 @@ h3{
     margin: 0;
 }
 
-/*userbar*/
+/*headerbar*/
+
+header{
+    width: 100%;
+    box-shadow: 2px 2px 2.5px rgba(0, 0, 0, 0.15);
+    position:relative;
+    z-index:10;
+}
+
 .searchbar{
     display: flex;
     flex-direction: row;
