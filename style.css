@@ -5,7 +5,7 @@ html{
 body{
     display: grid;
     grid-template-columns: 300px 1fr;
-    grid-template-rows: 175px auto;
+    grid-template-rows: repeat(2, auto-fit);
     width: 100%;
     margin: 0;
 }
@@ -18,8 +18,8 @@ nav{
 main{
     background-color: #999999;
     display: grid;
-    grid-template-columns: 1fr 400px;
-    grid-template-rows: auto auto;
+    grid-template-columns: 2fr minmax(400px 1fr);
+    grid-template-rows: repeat(2, auto-fit);
     gap: 15px;
     padding: 15px;
 }
@@ -63,4 +63,34 @@ h3{
 
 .trending-content{
     background-color: white;
+}
+
+/*navbar*/
+
+/*userbar*/
+.searchbar{
+    display: flex;
+    flex-direction: row;
+    height: 35px;
+    align-items: center;
+}
+
+.userbar{
+    display: flex;
+    flex-direction: row;
+    height: 55px;
+    align-items: center;
+}
+
+.welcome-message{
+    display:flex;
+    flex-direction: column;
+}
+
+.hi{
+    margin: 0;
+}
+
+.name{
+    margin: 0;
 }
