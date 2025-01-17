@@ -249,8 +249,22 @@ header>div{
     width: 115px;
     border-radius: 15px;
     margin: 15px;
-    margin-left: 0;
+    margin-right: 0;
     box-shadow: none;
+}
+
+.userbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-right: 60px;
+}
+
+.buttonbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-right: 60px;
 }
 
 .userpic-small{
