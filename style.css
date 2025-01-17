@@ -1,6 +1,7 @@
 html{
     height: 100%;
     font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body{
@@ -144,8 +145,18 @@ h3{
     margin: 0;
 }
 
+.page-logo-img{
+    height: 48px;
+    width: 48px;    
+    margin-right: 10px;
+}
+
 .page-logo{
+    padding-top: 20px;
     padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .menu-bar{
@@ -154,9 +165,23 @@ h3{
     flex-direction: column;
 }
 
+.menu-item{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 15px 0px;
+    align-items: center;
+}
+
 .menu-item-label{
     font-size: 1.25;
     margin: 0;
+}
+
+.menu-img{
+    height: 32px;
+    width: 32px;
+    margin-right: 20px;
 }
 
 /*headerbar*/
@@ -192,12 +217,18 @@ header>div{
     align-items: center;
 }
 
-.search-pic{
+.searchbar-button{
     color:white;
+    background: transparent;
     border: none;
-    height: 1.5em;
-    width: 1.5em;
+    height: 2em;
+    width: 2em;
     margin-right: 15px;
+}
+
+.searchbar-pic{
+    height: 2em;
+    width: 2em;
 }
 
 .welcomebar{
@@ -207,6 +238,7 @@ header>div{
 .welcome-message{
     display:flex;
     flex-direction: column;
+    padding-bottom: 5px;
 }
 
 .user-button{
@@ -234,10 +266,11 @@ header>div{
     border-radius: 23px;
     margin-right: 10px;
 }
-r
+
 .hi{
     margin: 0;
-    font-size: 0.7em;
+    font-size: 0.9em;
+    padding-bottom: 0;
 }
 
 .name{
